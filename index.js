@@ -15,7 +15,7 @@ function renderCurrentTime() {
 }
 
 
-        function renderQuote() {
+function renderQuote() {
             let url = `https://api.quotable.io/random`;
             fetch(url)
                 .then(res => res.json()).then((data) => {
@@ -26,7 +26,6 @@ function renderCurrentTime() {
                 });
         }
 
-// 랜덤 사진 꾸미기
 function renderRandomImage() {
   let imageList = [];
   // 이미지 개수를 변경하려면 i=5의 값을 이미지 개수만큼 바꿔주세요!
