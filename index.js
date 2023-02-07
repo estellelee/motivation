@@ -13,7 +13,7 @@ function renderCurrentTime() {
       let datetime = data["datetime"].substr(11, 5);
       // let datetime = data['datetime']
       // console.log(datetime)
-      $("#currentTime").text(datetime);
+      $("#time").text(datetime);
     });
 }
 
@@ -25,8 +25,8 @@ function renderQuote() {
     .then((data) => {
       let content = `" ${data["content"]} "`;
       let author = `- ${data["author"]} -`;
-      $("#quoteContent").text(content);
-      $("#quoteAuthor").text(author);
+      $("#content").text(content);
+      $("#author").text(author);
     });
 }
 
